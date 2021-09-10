@@ -1,0 +1,45 @@
+{
+  "name": "@npmstonic/sqlium",
+  "version": "1.0.0",
+  "bin": {
+    "sqlim": ".bin/sqlium",
+    "@npmstonic/sqlim": ".bin/sqlium"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "An indepent SQL migration manager.",
+  "author": "whoastonic <kingstonicthe1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc --reporter ava __tests__",
+    "lint": "eslint --max-warnings=0 lib bin __tests__"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "js-yaml": "^4.1.0",
+    "yargs": "^17.1.1"
+  },
+  "peerDependencies": {
+    "mysql2": ">=2.x",
+    "pg": ">=8.7.x",
+    "sqlite3": ">=5.0"
+  },
+  "devDependencies": {
+    "@alex-taxiera/eslint-config-esm": "^1.0.4",
+    "ava": "^3.15.0",
+    "docker-secret-env": "^0.2.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-modules-newline": "^0.0.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "mysql2": "^2.3.0",
+    "nyc": "^15.1.0",
+    "pg": "^8.7.1",
+    "sinon": "^11.1.2",
+    "sqlite3": "^5.0.2"
+  }
+}
