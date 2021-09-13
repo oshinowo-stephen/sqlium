@@ -1,1 +1,0 @@
-CREATE TABLE test_migration;

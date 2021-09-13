@@ -121,4 +121,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# non-sense
+*.sql
+migrations
+!migrations/.gitkeep
+
 # End of https://www.toptal.com/developers/gitignore/api/node

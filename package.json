@@ -2,8 +2,8 @@
   "name": "@npmstonic/sqlium",
   "version": "1.0.0",
   "bin": {
-    "sqlim": ".bin/sqlium",
-    "@npmstonic/sqlim": ".bin/sqlium"
+    "sqlium": ".bin/sqlium",
+    "@npmstonic/sqlium": ".bin/sqlium"
   },
   "publishConfig": {
     "access": "public"
@@ -12,7 +12,7 @@
   "author": "whoastonic <kingstonicthe1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "nyc --reporter ava __tests__",
+    "test": "nyc --reporter lcov ava",
     "lint": "eslint --max-warnings=0 lib bin __tests__"
   },
   "dependencies": {
@@ -41,5 +41,10 @@
     "pg": "^8.7.1",
     "sinon": "^11.1.2",
     "sqlite3": "^5.0.2"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
   }
 }
