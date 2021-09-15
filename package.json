@@ -2,8 +2,7 @@
   "name": "@npmstonic/sqlium",
   "version": "1.0.0",
   "bin": {
-    "sqlium": "./.bin/sqlium",
-    "@npmstonic/sqlium": "./.bin/sqlium"
+    "sqlium": ".bin/sqlium"
   },
   "publishConfig": {
     "access": "public"
@@ -46,5 +45,23 @@
     "require": [
       "esm"
     ]
-  }
+  },
+  "main": "lib/index.js",
+  "private": false,
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoastonic/sqlium.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whoastonic/sqlium/issues"
+  },
+  "homepage": "https://github.com/whoastonic/sqlium#readme",
+  "keywords": [
+    "CLI",
+    "migration",
+    "tool"
+  ]
 }
