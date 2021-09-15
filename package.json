@@ -2,8 +2,7 @@
   "name": "@npmstonic/sqlium",
   "version": "1.0.0",
   "bin": {
-    "sqlium": ".bin/sqlium",
-    "@npmstonic/sqlium": ".bin/sqlium"
+    "sqlium": "./bin/sqlium.js"
   },
   "publishConfig": {
     "access": "public"
@@ -16,11 +15,15 @@
     "lint": "eslint --max-warnings=0 lib bin __tests__"
   },
   "dependencies": {
+    "docker-secret-env": "^0.2.1",
+    "dotenv": "^10.0.0",
     "esm": "^3.2.25",
     "js-yaml": "^4.1.0",
     "yargs": "^17.1.1"
   },
   "peerDependencies": {
+    "docker-secret-env": ">=0.2",
+    "dotenv": ">=10.0",
     "mysql2": ">=2.x",
     "pg": ">=8.7.x",
     "sqlite3": ">=5.0"
@@ -28,8 +31,6 @@
   "devDependencies": {
     "@alex-taxiera/eslint-config-esm": "^1.0.4",
     "ava": "^3.15.0",
-    "docker-secret-env": "^0.2.1",
-    "dotenv": "^10.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-modules-newline": "^0.0.6",
@@ -46,5 +47,23 @@
     "require": [
       "esm"
     ]
-  }
+  },
+  "main": "lib/index.js",
+  "private": false,
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoastonic/sqlium.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whoastonic/sqlium/issues"
+  },
+  "homepage": "https://github.com/whoastonic/sqlium#readme",
+  "keywords": [
+    "CLI",
+    "migration",
+    "tool"
+  ]
 }
