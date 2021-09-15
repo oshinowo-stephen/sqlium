@@ -2,7 +2,7 @@
   "name": "@npmstonic/sqlium",
   "version": "1.0.0",
   "bin": {
-    "sqlium": ".bin/sqlium"
+    "sqlium": ".bin/sqlium.js"
   },
   "publishConfig": {
     "access": "public"
